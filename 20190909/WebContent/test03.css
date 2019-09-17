@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.main{
+	background: blue;
+	width: 800px;
+	height: 400px;
+	margin: auto;
+	
+}
+
+
+.left{
+	width: 500px;
+	height: 300px;
+	background: red;
+	float: left;
+}
+
+.right{
+	width: 200px;
+	height: 300px;
+	background: green;
+	float: right;
+}
+
+footer{
+	background: pink;
+	width: 800px;
+	height: 100px;
+	clear: both;
+	
+}

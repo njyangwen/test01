@@ -1,0 +1,31 @@
+好友
+
+Thread
+
+张三   李四      
+张三   赵六
+
+
+李四  张三
+李四  王五  
+
+f1=Friends(person1,person2)
+person1 
+person2
+
+FriendsList  fl
+fl.add(f1);
+     
+Map<int,Map<int,Socket>>
+hashtable
+
+张三10001，<李四10002，socket>
+          <赵六10004，socket>
+
+     
+Server  收到所有的Socket
+
+localport  10001  10002  10003  10004  
+           张三    李四    王五    赵六
+
+  

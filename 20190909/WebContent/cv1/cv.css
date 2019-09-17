@@ -1,0 +1,124 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	color: #9b9b9b;
+}
+
+#main {
+	margin: 0px auto;
+	width: 860px;
+	box-shadow: 15px 15px 15px #ccc, 15px -15px 15px #ccc, -15px 15px 15px
+		#ccc, -15px -15px 15px #ccc;
+	padding: 0px 20px 20px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header {
+	padding-top: 40px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+	width: 700px;
+	margin: auto;
+}
+
+header .name {
+	float: left;
+}
+
+header .contact {
+	float: right;
+}
+
+.clearfix:after {
+	content: "\20";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+#content .left {
+	width: 400px;
+	float: left;
+}
+
+#content .right {
+	width: 220px;
+	float: right;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	color: gray;
+}
+
+.fullname {
+	font-size: 2em;
+	color: #333;
+}
+
+img {
+	width: 24px;
+}
+
+#content {
+	-top: 50px;
+	margin: 2em auto;
+	width: 700px;
+}
+
+#content h2 {
+	font-size: 1.57em;
+	padding: 4px 0px 4px 6px;
+	background-color: #f2f2f2;
+	color: #4d4d4d;
+}
+
+#content .content-title3 {
+	font-size: 20px;
+	padding-top: 30px;
+	color: #4d4d4d;
+}
+
+#content .right .logo {
+	border-radius: 67px;
+	background-image: url("3.png");
+	width: 134px;
+	height: 134px;
+	margin: auto;
+	margin-bottom: 4.6em;
+}
+
+#content .right .edu {
+	
+}
+
+#content .right .skill {
+	
+}
+
+p {
+	font-size: 1em;
+	margin: 1em auto;
+}
+
+#content .baseinfo {
+	margin-bottom: 5em;
+}
+
+.contact {
+	width: 220px;
+	text-align: right;
+}
+
+.contact p {
+	margin-right: 3.2em;
+}
+
+.contact img {
+	float: right;
+	margin-top: -2.2em;
+}
