@@ -5,8 +5,8 @@ package com.banyuan.service;
 
 import java.util.Vector;
 
-import com.banyuan.db.BaseDB;
 import com.banyuan.entity.Student;
+import com.banyuan.util.BaseDB;
 
 /**
  * @author yw

@@ -10,10 +10,10 @@ import java.sql.SQLException;
 import java.util.Vector;
 
 import com.banyuan.dao.StudentDao;
-import com.banyuan.db.BaseDB;
-import com.banyuan.db.JDBCUtil;
-import com.banyuan.db.ResultSetDB;
 import com.banyuan.entity.Student;
+import com.banyuan.util.BaseDB;
+import com.banyuan.util.JDBCUtil;
+import com.banyuan.util.ResultSetDB;
 
 /**
  * @author yw 2019年9月23日 上午9:32:10
@@ -72,7 +72,8 @@ public class StudentDaoImpl implements StudentDao {
 		String sql = "delete from stu_info where id=?";
 		jdbcutil.modify(sql, student.getId());
 	}
-
+	
+	
 	public Vector getDataByName(int curPage, int count, Student student) {
 		
 		Vector data = new Vector();

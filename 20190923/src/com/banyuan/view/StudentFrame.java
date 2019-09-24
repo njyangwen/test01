@@ -21,6 +21,7 @@ import javax.swing.border.EmptyBorder;
 
 import com.banyuan.service.StudentService;
 import com.banyuan.service.impl.StudentServiceImpl;
+import com.banyuan.util.MyFactory;
 
 /**
  * @author yw 2019年9月20日 上午10:11:52
@@ -68,7 +69,8 @@ public class StudentFrame extends JFrame implements ActionListener {
 		scrollPane.setBounds(6, 6, 721, 347);
 		panel.add(scrollPane);
 
-		StudentService ss=new StudentServiceImpl();
+//		StudentService ss=new StudentServiceImpl();
+		StudentService ss=new MyFactory<StudentService>().getInstance("studentService");
 		data = ss.getData(1, 3);
 		colName = new Vector();
 		colName.add("id");

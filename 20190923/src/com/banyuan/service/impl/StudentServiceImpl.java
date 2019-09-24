@@ -9,6 +9,7 @@ import com.banyuan.dao.StudentDao;
 import com.banyuan.dao.impl.StudentDaoImpl;
 import com.banyuan.entity.Student;
 import com.banyuan.service.StudentService;
+import com.banyuan.util.MyFactory;
 
 /**
  * @author yw
@@ -17,11 +18,14 @@ import com.banyuan.service.StudentService;
  */
 public class StudentServiceImpl implements StudentService{
 	
+	private StudentDao studentDao=	new MyFactory<StudentDao>().getInstance("studentDao");
+
+	
 	//逻辑
 	public Vector getData(int curPage, int count) throws RuntimeException{
 //		BaseDB sdb=new BaseDB();
-		StudentDao dao=new StudentDaoImpl();
-		Vector d=dao.getData(curPage, count);
+//		StudentDao dao=new StudentDaoImpl();
+		Vector d=studentDao.getData(curPage, count);
 		//curPage范围0 -1   >总页数?
 //		return sdb.getData(curPage, count);
 		return d;
@@ -33,8 +37,8 @@ public class StudentServiceImpl implements StudentService{
 		//判断页面的数值是否在有效范围curPage>0
 		
 		//符合条件，调用dao层功能
-		StudentDao dao=new StudentDaoImpl();
-		Vector d=dao.getDataByName(curPage, count,student);
+//		StudentDao dao=new StudentDaoImpl();
+		Vector d=studentDao.getDataByName(curPage, count,student);
 		
 		return d;
 	}
