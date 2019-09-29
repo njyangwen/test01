@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"name": "张三",
+		"address": {
+			"homeAddress": "nanjing",
+			"companyAddress": "shanghai"
+		},
+		"friends": [
+			{
+				"id": 2,
+				"name": "李四",
+				"address": {
+					"homeAddress": "beijing",
+					"companyAddress": "shanghai"
+				}
+			},
+			{
+				"id": 3,
+				"name": "王五",
+				"address": {
+					"homeAddress": "nanjing",
+					"companyAddress": "hainan"
+				}
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "赵六",
+		"address": {
+			"homeAddress": "beijing",
+			"companyAddress": "shanghai"
+		},
+		"friends": [
+			{
+				"id": 2,
+				"name": "李四",
+				"address": {
+					"homeAddress": "beijing",
+					"companyAddress": "shanghai"
+				}
+			},
+			{
+				"id": 3,
+				"name": "王五",
+				"address": {
+					"homeAddress": "nanjing",
+					"companyAddress": "hainan"
+				}
+			},
+			{
+				"id": 4,
+				"name": "小丽",
+				"address": {
+					"homeAddress": "hainan",
+					"companyAddress": "shanghai"
+				}
+			}
+		]
+	}
+]
